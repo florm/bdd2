@@ -864,7 +864,7 @@ go
 --ejecucion del procedimiento
 use DB_Temporal
 go
---exec sp_Compare 'Curso', 'Destino'
+--exec sp_Compare 'Origen', 'Destino'
 
 ----para ver resultados
 --select * from BaseDeDatos
