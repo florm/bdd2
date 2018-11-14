@@ -3,7 +3,7 @@ USE master
 GO
 IF EXISTS(select * from sys.databases where name= 'DB_Temporal')
 begin
-ALTER DATABASE dbTemporal SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+ALTER DATABASE DB_Temporal SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 EXEC('DROP DATABASE ' + 'DB_Temporal')
 end
 
@@ -595,7 +595,22 @@ begin
 	return @queryRetorno
 end
 go
+
+
+
 ------procedimiento final--------
+-- ==================================================================================================
+-- Autores: Balanda, Sergio
+--			Casuscelli, Alejandra
+--			Lucero, Nicolás
+--			falta una
+--			Martin, Florencia	
+-- Fecha de Creación: 05/11/2018
+-- Descripción:	Stored procedure que realiza una comparación entre 2 bases de datos (una de origen
+-- y otra destino) y devuelve un archivo .sql que recreará la estructura de la base de datos de origen
+-- en la base de datos de destino
+-- ==================================================================================================
+
 IF  EXISTS (SELECT * FROM sys.procedures WHERE object_id = OBJECT_ID(N'sp_Compare'))
 drop proc sp_Compare
 go
@@ -879,6 +894,17 @@ go
 
 
 --procedimiento para verificar normas de codificacion
+-- ==================================================================================================
+-- Autores: Balanda, Sergio
+--			Casuscelli, Alejandra
+--			Lucero, Nicolás
+--			falta una
+--			Martin, Florencia	
+-- Fecha de Creación: 05/11/2018
+-- Descripción:	Stored procedure que verifica las normas de codificación de una base de datos
+-- ingresada por parámetro y graba el resultado en una tabla de normas.
+-- ==================================================================================================
+
 IF  EXISTS (SELECT * FROM sys.procedures WHERE object_id = OBJECT_ID(N'sp_VerificarNormasCodificacion'))
 drop proc sp_VerificarNormasCodificacion
 go
