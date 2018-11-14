@@ -603,8 +603,8 @@ go
 -- Autores: Balanda, Sergio
 --			Casuscelli, Alejandra
 --			Lucero, Nicolás
---			falta una
---			Martin, Florencia	
+--			Martin,Florencia
+--			Rondo, Reyna	
 -- Fecha de Creación: 05/11/2018
 -- Descripción:	Stored procedure que realiza una comparación entre 2 bases de datos (una de origen
 -- y otra destino) y devuelve un archivo .sql que recreará la estructura de la base de datos de origen
@@ -898,8 +898,8 @@ go
 -- Autores: Balanda, Sergio
 --			Casuscelli, Alejandra
 --			Lucero, Nicolás
---			falta una
---			Martin, Florencia	
+--			Martin,Florencia
+--			Rondo, Reyna	
 -- Fecha de Creación: 05/11/2018
 -- Descripción:	Stored procedure que verifica las normas de codificación de una base de datos
 -- ingresada por parámetro y graba el resultado en una tabla de normas.
